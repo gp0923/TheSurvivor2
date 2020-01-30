@@ -1,0 +1,10 @@
+{
+  "modid": "gp0923_TheSurvivor",
+  "name": "The Survivor",
+  "author_list": ["gp0923"],
+  "description": "The Survivor, a modded class for Slay The Spire",
+  "version": "0.1",
+  "sts_version": "01-27-2020",
+  "mts_version": "3.6.3",
+  "dependencies": ["basemod"]
+}
