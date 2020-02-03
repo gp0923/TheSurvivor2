@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import the_survivor.cards.Common.Salvage;
+import the_survivor.cards.basic.Sword;
 import the_survivor.cards.basic.Defend_Topaz;
 import the_survivor.cards.basic.Strike_Topaz;
 import the_survivor.patches.TheSurvivorEnum;
@@ -51,7 +52,7 @@ public class TheSurvivorPlayer extends CustomPlayer {
         retVal.add(Defend_Topaz.ID);
         retVal.add(Defend_Topaz.ID);
         retVal.add(Salvage.ID);
-        retVal.add(Salvage.ID);
+        retVal.add(Sword.ID);
 
         return retVal;
     }

@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import the_survivor.cards.Common.Salvage;
+import the_survivor.cards.basic.Sword;
 import the_survivor.cards.basic.Defend_Topaz;
 import the_survivor.cards.basic.Strike_Topaz;
 import the_survivor.cards.special.Scrap;
@@ -61,6 +62,7 @@ public class TheSurvivorMod implements EditCharactersSubscriber, EditCardsSubscr
         BaseMod.addCard(new Defend_Topaz());
 
         BaseMod.addCard(new Salvage());
+        BaseMod.addCard(new Sword());
 
         //Special
         BaseMod.addCard(new Scrap());
@@ -71,7 +73,7 @@ public class TheSurvivorMod implements EditCharactersSubscriber, EditCardsSubscr
     @Override
     public void receiveEditStrings() {
         logger.info("Editing strings");
-        BaseMod.loadCustomStringsFile(CardStrings.class, "localization/TheSurvivor-CardStrings-eng.json");
+        BaseMod.loadCustomStringsFile(CardStrings.class, "theSurvivor/localization/TheSurvivor-CardStrings-eng.json");
         logger.info("Finished editing strings");
     }
 }

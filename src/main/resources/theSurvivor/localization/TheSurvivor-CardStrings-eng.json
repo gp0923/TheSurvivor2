@@ -17,5 +17,9 @@
   "TS:Scrap": {
     "NAME": "Scrap",
     "DESCRIPTION": "Exhaust."
+  },
+  "TS:Sword": {
+    "NAME": "Sword",
+    "DESCRIPTION": "Deal !D! damage."
   }
 }

@@ -7,4 +7,5 @@ public class CustomTags {
     @SpireEnum public static AbstractCard.CardTags CONSUMABLE;
     @SpireEnum public static AbstractCard.CardTags IMPROVISED;
     @SpireEnum public static AbstractCard.CardTags SCRAP;
+    @SpireEnum public static AbstractCard.CardTags DAMAGED;
 }

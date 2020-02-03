@@ -15,7 +15,7 @@ import the_survivor.patches.AbstractCardEnum;
 
 public class Strike_Topaz extends SurvivorCard {
     public static final String ID = CardUtils.getCardIDFromName("Strike");
-    public static final String IMG_PATH = "img/cards/strike_topaz.png";
+    public static final String IMG_PATH = "theSurvivor/img/cards/strike_topaz.png";
     private static final int COST = 1;
     private static final int ATTACK_DMG = 6;
     private static final int UPGRADE_PLUS_DMG = 3;

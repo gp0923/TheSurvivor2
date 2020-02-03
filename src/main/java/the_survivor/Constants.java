@@ -16,10 +16,10 @@ public final class Constants {
 
     public static final class Player {
         public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
-        public static final String THE_SURVIVOR_MAIN = "img/char/main.png";
-        public static final String THE_SURVIVOR_SHOULDER_2 = "img/char/shoulder2.png"; // campfire pose
-        public static final String THE_SURVIVOR_SHOULDER_1 = "img/char/shoulder1.png"; // another campfire pose
-        public static final String THE_SURVIVOR_CORPSE = "img/char/corpse.png"; // dead corpse
+        public static final String THE_SURVIVOR_MAIN = "theSurvivor/img/char/main.png";
+        public static final String THE_SURVIVOR_SHOULDER_2 = "theSurvivor/img/char/shoulder2.png"; // campfire pose
+        public static final String THE_SURVIVOR_SHOULDER_1 = "theSurvivor/img/char/shoulder1.png"; // another campfire pose
+        public static final String THE_SURVIVOR_CORPSE = "theSurvivor/img/char/corpse.png"; // dead corpse
 
         public static final String NAME = "The Survivor";
         public static final String FLAVOR_TEXT = "A rugged outcast, alienated from society. Has persevered through the most extreme conditions. NL Can he survive in the spire?";
@@ -36,20 +36,20 @@ public final class Constants {
         public static final BitmapFont ENERGY_NUM_FONT = FontHelper.energyNumFontBlue;
 
         public static final String[] ORB_TEXTURES = {
-                "img/orb/layer1.png",
-                "img/orb/layer2.png",
-                "img/orb/layer3.png",
-                "img/orb/layer4.png",
-                "img/orb/layer5.png",
-                "img/orb/layer6.png",
-                "img/orb/layer1d.png",
-                "img/orb/layer2d.png",
-                "img/orb/layer3d.png",
-                "img/orb/layer4d.png",
-                "img/orb/layer5d.png",
+                "theSurvivor/img/orb/layer1.png",
+                "theSurvivor/img/orb/layer2.png",
+                "theSurvivor/img/orb/layer3.png",
+                "theSurvivor/img/orb/layer4.png",
+                "theSurvivor/img/orb/layer5.png",
+                "theSurvivor/img/orb/layer6.png",
+                "theSurvivor/img/orb/layer1d.png",
+                "theSurvivor/img/orb/layer2d.png",
+                "theSurvivor/img/orb/layer3d.png",
+                "theSurvivor/img/orb/layer4d.png",
+                "theSurvivor/img/orb/layer5d.png",
         };
 
-        public static final String ORB_VFX_PATH = "img/orb/vfx.png";
+        public static final String ORB_VFX_PATH = "theSurvivor/img/orb/vfx.png";
 
         public static final float[] LAYER_SPEEDS = {
                 80.0F, 40.0F, -40.0F, 20.0F, 0.0F,
@@ -57,27 +57,27 @@ public final class Constants {
         };
 
         public static final String PORTRAIT_NAME ="survivorPortraitBG.jpg";
-        public static final String PORTRAIT_PATH ="img/char/survivorPortraitBG.jpg";
-        public static final String BUTTON_PATH ="img/char/button.png";
+        public static final String PORTRAIT_PATH ="theSurvivor/img/char/survivorPortraitBG.jpg";
+        public static final String BUTTON_PATH ="theSurvivor/img/char/button.png";
     }
 
     public static final class Cards{
         public static final Color BASE_COLOR = CardHelper.getColor(131.0f, 156.0f, 165.0f);
 
-        public static final String ATTACK_BG_PATH_SMALL ="img/512/bg_attack_topaz.png";
-        public static final String ATTACK_BG_PATH_LARGE ="img/1024/bg_attack_topaz.png";
+        public static final String ATTACK_BG_PATH_SMALL ="theSurvivor/img/512/bg_attack_topaz.png";
+        public static final String ATTACK_BG_PATH_LARGE ="theSurvivor/img/1024/bg_attack_topaz.png";
 
-        public static final String SKILL_BG_PATH_SMALL ="img/512/bg_skill_topaz.png";
-        public static final String SKILL_BG_PATH_LARGE ="img/1024/bg_skill_topaz.png";
+        public static final String SKILL_BG_PATH_SMALL ="theSurvivor/img/512/bg_skill_topaz.png";
+        public static final String SKILL_BG_PATH_LARGE ="theSurvivor/img/1024/bg_skill_topaz.png";
 
-        public static final String POWER_BG_PATH_SMALL ="img/512/bg_power_topaz.png";
-        public static final String POWER_BG_PATH_LARGE ="img/1024/bg_power_topaz.png";
+        public static final String POWER_BG_PATH_SMALL ="theSurvivor/img/512/bg_power_topaz.png";
+        public static final String POWER_BG_PATH_LARGE ="theSurvivor/img/1024/bg_power_topaz.png";
 
-        public static final String ORB_PATH_SMALL ="img/512/card_topaz_orb.png";
-        public static final String ORB_PATH_LARGE ="img/1024/card_topaz_orb.png";
+        public static final String ORB_PATH_SMALL ="theSurvivor/img/512/card_topaz_orb.png";
+        public static final String ORB_PATH_LARGE ="theSurvivor/img/1024/card_topaz_orb.png";
 
-        public static final String DEFAULT_ATTACK_PATH ="img/cards/strike_topaz.png";
-        public static final String DEFAULT_SKILL_PATH ="img/cards/defend_topaz.png";
+        public static final String DEFAULT_ATTACK_PATH ="theSurvivor/img/cards/strike_topaz.png";
+        public static final String DEFAULT_SKILL_PATH ="theSurvivor/img/cards/defend_topaz.png";
 
 
     }
