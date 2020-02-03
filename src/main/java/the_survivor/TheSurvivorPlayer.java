@@ -11,7 +11,9 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import the_survivor.cards.Strike_Survivor;
+import the_survivor.cards.Common.Salvage;
+import the_survivor.cards.basic.Defend_Topaz;
+import the_survivor.cards.basic.Strike_Topaz;
 import the_survivor.patches.TheSurvivorEnum;
 
 import java.util.ArrayList;
@@ -38,18 +40,18 @@ public class TheSurvivorPlayer extends CustomPlayer {
         return PORTRAIT_NAME;
     }
 
-    public ArrayList<String> getStartingDeck() { //TODO
+    public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(Strike_Survivor.ID);
-        retVal.add(Strike_Survivor.ID);
-        retVal.add(Strike_Survivor.ID);
-        retVal.add(Strike_Survivor.ID);
-        retVal.add(Strike_Survivor.ID);
-        retVal.add(Strike_Survivor.ID);
-        retVal.add(Strike_Survivor.ID);
-        retVal.add(Strike_Survivor.ID);
-        retVal.add(Strike_Survivor.ID);
-        retVal.add(Strike_Survivor.ID);
+        retVal.add(Strike_Topaz.ID);
+        retVal.add(Strike_Topaz.ID);
+        retVal.add(Strike_Topaz.ID);
+        retVal.add(Strike_Topaz.ID);
+        retVal.add(Strike_Topaz.ID);
+        retVal.add(Defend_Topaz.ID);
+        retVal.add(Defend_Topaz.ID);
+        retVal.add(Defend_Topaz.ID);
+        retVal.add(Salvage.ID);
+        retVal.add(Salvage.ID);
 
         return retVal;
     }
@@ -85,7 +87,7 @@ public class TheSurvivorPlayer extends CustomPlayer {
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new Strike_Survivor(); //TODO
+        return new Strike_Topaz(); //TODO
     }
 
     @Override

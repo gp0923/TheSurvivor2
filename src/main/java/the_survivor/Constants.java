@@ -76,6 +76,9 @@ public final class Constants {
         public static final String ORB_PATH_SMALL ="img/512/card_topaz_orb.png";
         public static final String ORB_PATH_LARGE ="img/1024/card_topaz_orb.png";
 
+        public static final String DEFAULT_ATTACK_PATH ="img/cards/strike_topaz.png";
+        public static final String DEFAULT_SKILL_PATH ="img/cards/defend_topaz.png";
+
 
     }
 

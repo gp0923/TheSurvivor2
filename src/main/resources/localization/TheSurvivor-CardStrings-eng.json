@@ -6,5 +6,16 @@
   "TS:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
+  },
+
+  "TS:Salvage": {
+    "NAME": "Salvage",
+    "DESCRIPTION": "Exhaust up to !M! card in your hand. Add !M! Scrap to your hand.",
+    "UPGRADE_DESCRIPTION": "Exhaust up to !M! cards in your hand. Add !M! Scraps to your hand."
+  },
+
+  "TS:Scrap": {
+    "NAME": "Scrap",
+    "DESCRIPTION": "Exhaust."
   }
 }

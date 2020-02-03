@@ -1,4 +1,4 @@
-package the_survivor.cards;
+package the_survivor.cards.basic;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -10,10 +10,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import the_survivor.CardUtils;
-import the_survivor.Constants;
+import the_survivor.cards.SurvivorCard;
 import the_survivor.patches.AbstractCardEnum;
 
-public class Strike_Survivor extends SurvivorCard {
+public class Strike_Topaz extends SurvivorCard {
     public static final String ID = CardUtils.getCardIDFromName("Strike");
     public static final String IMG_PATH = "img/cards/strike_topaz.png";
     private static final int COST = 1;
@@ -23,7 +23,7 @@ public class Strike_Survivor extends SurvivorCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    public Strike_Survivor() {
+    public Strike_Topaz() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
                 AbstractCard.CardType.ATTACK, AbstractCardEnum.TOPAZ,
                 AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.ENEMY);
@@ -40,7 +40,7 @@ public class Strike_Survivor extends SurvivorCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new Strike_Survivor();
+        return new Strike_Topaz();
     }
 
     @Override

@@ -8,7 +8,10 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import the_survivor.cards.Strike_Survivor;
+import the_survivor.cards.Common.Salvage;
+import the_survivor.cards.basic.Defend_Topaz;
+import the_survivor.cards.basic.Strike_Topaz;
+import the_survivor.cards.special.Scrap;
 import the_survivor.patches.AbstractCardEnum;
 import the_survivor.patches.TheSurvivorEnum;
 
@@ -54,7 +57,14 @@ public class TheSurvivorMod implements EditCharactersSubscriber, EditCardsSubscr
     @Override
     public void receiveEditCards() {
         logger.info("Adding cards");
-        BaseMod.addCard(new Strike_Survivor());
+        BaseMod.addCard(new Strike_Topaz());
+        BaseMod.addCard(new Defend_Topaz());
+
+        BaseMod.addCard(new Salvage());
+
+        //Special
+        BaseMod.addCard(new Scrap());
+
         logger.info("Finished adding cards");
     }
 
