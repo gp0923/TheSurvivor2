@@ -3,21 +3,30 @@ package the_survivor;
 import basemod.BaseMod;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
+import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
+import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.google.gson.Gson;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.Keyword;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import the_survivor.cards.Common.Salvage;
-import the_survivor.cards.basic.Sword;
+import the_survivor.cards.common.Salvage;
+import the_survivor.cards.common.Sword;
 import the_survivor.cards.basic.Defend_Topaz;
+import the_survivor.cards.basic.Pickaxe;
 import the_survivor.cards.basic.Strike_Topaz;
 import the_survivor.cards.special.Scrap;
+import the_survivor.cards.uncommon.SwordU;
 import the_survivor.patches.AbstractCardEnum;
 import the_survivor.patches.TheSurvivorEnum;
+import the_survivor.variables.DurabilityVariable;
+
+import java.nio.charset.StandardCharsets;
 
 @SpireInitializer
-public class TheSurvivorMod implements EditCharactersSubscriber, EditCardsSubscriber, EditStringsSubscriber{
+public class TheSurvivorMod implements EditCharactersSubscriber, EditCardsSubscriber, EditStringsSubscriber, EditKeywordsSubscriber {
 
     public static final Logger logger = LogManager.getLogger(TheSurvivorMod.class.getName());
 
@@ -60,20 +69,41 @@ public class TheSurvivorMod implements EditCharactersSubscriber, EditCardsSubscr
         logger.info("Adding cards");
         BaseMod.addCard(new Strike_Topaz());
         BaseMod.addCard(new Defend_Topaz());
+        BaseMod.addCard(new Pickaxe());
 
         BaseMod.addCard(new Salvage());
         BaseMod.addCard(new Sword());
 
+        BaseMod.addCard(new SwordU());
+
         //Special
         BaseMod.addCard(new Scrap());
-
         logger.info("Finished adding cards");
+
+        logger.info("Adding variables");
+        BaseMod.addDynamicVariable(new DurabilityVariable());
+        logger.info("Finished adding variables");
     }
 
     @Override
     public void receiveEditStrings() {
         logger.info("Editing strings");
-        BaseMod.loadCustomStringsFile(CardStrings.class, "theSurvivor/localization/TheSurvivor-CardStrings-eng.json");
+        BaseMod.loadCustomStringsFile(CardStrings.class, "theSurvivor/localization/eng/cardStrings.json");
         logger.info("Finished editing strings");
+    }
+
+    @Override
+    public void receiveEditKeywords() {
+        String path = "theSurvivor/localization/eng/keywords.json";
+
+        Gson gson = new Gson();
+        String json = Gdx.files.internal(path).readString(String.valueOf(StandardCharsets.UTF_8));
+        Keyword[] keywords = gson.fromJson(json, Keyword[].class);
+
+        if (keywords != null) {
+            for (Keyword keyword : keywords) {
+                BaseMod.addKeyword(keyword.NAMES, keyword.DESCRIPTION);
+            }
+        }
     }
 }

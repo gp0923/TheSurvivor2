@@ -1,4 +1,4 @@
-package the_survivor.cards.Common;
+package the_survivor.cards.common;
 
 import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import the_survivor.CardUtils;
+import the_survivor.cards.CardUtils;
 import the_survivor.Constants;
 import the_survivor.cards.SurvivorCard;
 import the_survivor.cards.special.Scrap;

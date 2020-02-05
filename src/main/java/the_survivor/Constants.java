@@ -18,7 +18,7 @@ public final class Constants {
         public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
         public static final String THE_SURVIVOR_MAIN = "theSurvivor/img/char/main.png";
         public static final String THE_SURVIVOR_SHOULDER_2 = "theSurvivor/img/char/shoulder2.png"; // campfire pose
-        public static final String THE_SURVIVOR_SHOULDER_1 = "theSurvivor/img/char/shoulder1.png"; // another campfire pose
+        public static final String THE_SURVIVOR_SHOULDER_1 = "theSurvivor/img/char/shoulder.png"; // another campfire pose
         public static final String THE_SURVIVOR_CORPSE = "theSurvivor/img/char/corpse.png"; // dead corpse
 
         public static final String NAME = "The Survivor";

@@ -1,0 +1,14 @@
+[
+  {
+    "NAMES": [
+      "durability"
+    ],
+    "DESCRIPTION": "Decreases when played. A card that runs out of durability is downgraded (persists after combat). NL Restored between combats."
+  },
+  {
+    "NAMES": [
+      "repair"
+    ],
+    "DESCRIPTION": "Upgrade a damaged card for this combat."
+  }
+]

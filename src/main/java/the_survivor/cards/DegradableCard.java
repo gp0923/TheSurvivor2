@@ -6,7 +6,7 @@ public abstract class DegradableCard extends SurvivorCard implements Degradable 
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
     }
 
-    public void degradeName(String name){
+    protected void degradeName(String name) {
         if (timesUpgraded > 0)
             --this.timesUpgraded;
         if (timesUpgraded == 0)
@@ -17,6 +17,12 @@ public abstract class DegradableCard extends SurvivorCard implements Degradable 
 
     protected void degradeDamage(int amount, boolean isToBase) {
         this.baseDamage -= amount;
-        this.upgradedDamage = isToBase;
+        this.upgradedDamage = !isToBase;
+    }
+
+    protected void degradeMagicNumber(int amount, boolean isToBase) {
+        this.baseMagicNumber -= amount;
+        this.magicNumber = this.baseMagicNumber;
+        this.upgradedMagicNumber = !isToBase;
     }
 }

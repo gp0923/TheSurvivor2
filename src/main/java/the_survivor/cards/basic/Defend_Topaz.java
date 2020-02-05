@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import the_survivor.CardUtils;
+import the_survivor.cards.CardUtils;
 import the_survivor.Constants;
 import the_survivor.cards.SurvivorCard;
 import the_survivor.patches.AbstractCardEnum;

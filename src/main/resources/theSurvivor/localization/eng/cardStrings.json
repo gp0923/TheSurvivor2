@@ -7,19 +7,28 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
-
   "TS:Salvage": {
     "NAME": "Salvage",
     "DESCRIPTION": "Exhaust up to !M! card in your hand. Add !M! Scrap to your hand.",
     "UPGRADE_DESCRIPTION": "Exhaust up to !M! cards in your hand. Add !M! Scraps to your hand."
   },
-
   "TS:Scrap": {
     "NAME": "Scrap",
     "DESCRIPTION": "Exhaust."
   },
   "TS:Sword": {
-    "NAME": "Sword",
-    "DESCRIPTION": "Deal !D! damage."
+    "NAME": "Worn Sword",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Durability !DUR!."
+  },
+  "TS:SwordU": {
+    "NAME": "Tempered Blade",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL Durability !DUR!."
+  },
+  "TS:Pickaxe": {
+    "NAME": "Notched Pickaxe",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Apply !M! vulnerable. NL Durability !DUR!."
   }
 }
