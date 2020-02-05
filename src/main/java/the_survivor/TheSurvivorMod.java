@@ -6,6 +6,7 @@ import basemod.interfaces.EditCharactersSubscriber;
 import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -17,6 +18,7 @@ import the_survivor.cards.common.Sword;
 import the_survivor.cards.basic.Defend_Topaz;
 import the_survivor.cards.basic.Pickaxe;
 import the_survivor.cards.basic.Strike_Topaz;
+import the_survivor.cards.rare.SwordR;
 import the_survivor.cards.special.Scrap;
 import the_survivor.cards.uncommon.SwordU;
 import the_survivor.patches.AbstractCardEnum;
@@ -75,6 +77,8 @@ public class TheSurvivorMod implements EditCharactersSubscriber, EditCardsSubscr
         BaseMod.addCard(new Sword());
 
         BaseMod.addCard(new SwordU());
+
+        BaseMod.addCard(new SwordR());
 
         //Special
         BaseMod.addCard(new Scrap());

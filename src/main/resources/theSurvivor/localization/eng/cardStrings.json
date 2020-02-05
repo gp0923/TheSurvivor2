@@ -26,6 +26,11 @@
     "DESCRIPTION": "Deal !D! damage.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL Durability !DUR!."
   },
+  "TS:SwordR": {
+    "NAME": "Glamdring",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! strength. NL Durability !DUR!."
+  },
   "TS:Pickaxe": {
     "NAME": "Notched Pickaxe",
     "DESCRIPTION": "Deal !D! damage.",
